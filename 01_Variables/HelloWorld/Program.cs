@@ -4,6 +4,14 @@ namespace HelloWorld
 {
     public class Program
     {
+        public class People
+        {
+            public string name;
+
+            public int age;
+
+
+        }
         static void Main(string[] args)   
         {
             // Integer variables
@@ -17,6 +25,15 @@ namespace HelloWorld
             // Display variables
             Console.WriteLine($"Name: {name}");
             Console.WriteLine($"Age: {age}");
+
+            People messi = new People();
+            messi.name = "Messi";
+            messi.age =45;
+
+            Console.WriteLine($"Name: {messi.name}");
+            Console.WriteLine($"Age: {messi.age}");
+            
+
         }
     }
 }
