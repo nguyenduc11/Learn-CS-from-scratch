@@ -16,11 +16,9 @@ namespace HelloWorld
         {
             // Integer variables
             int age = 25;
-            int score = 100;
 
             // String variables
             string name = "John";
-            string message = "Hello, World!";
 
             // Display variables
             Console.WriteLine($"Name: {name}");
@@ -33,6 +31,30 @@ namespace HelloWorld
             Console.WriteLine($"Name: {messi.name}");
             Console.WriteLine($"Age: {messi.age}");
             
+            // Read user keyboard
+
+            // System.Console.WriteLine("Enter username");
+            // string userName = Console.ReadLine();
+            // System.Console.WriteLine("Username is " + userName);
+
+            int checkNumber = 10;
+            if (checkNumber % 2 == 0){
+                System.Console.WriteLine("so chan");
+            }
+            else if (checkNumber % 2 == 1){
+                System.Console.WriteLine("so le");
+            }
+
+            System.Console.WriteLine(checkNumber>5);
+            string clubName = "Barcelona";
+            int stringLength = clubName.Length;
+            System.Console.WriteLine(stringLength);
+
+            // String Interpolation
+            System.Console.WriteLine($"My club is: {clubName}");
+
+            bool isFavBook = true;
+            System.Console.WriteLine(isFavBook);
 
         }
     }
