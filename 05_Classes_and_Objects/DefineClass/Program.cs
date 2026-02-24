@@ -29,11 +29,15 @@ namespace DefineClass
     // Defince a Car class
     public class Car
     {
+        string model;
         string color;
+        int year;
 
-        public Car(string color)
+        public Car(string model, string color, int year)
         {
+            this.model = model;
             this.color = color;
+            this.year = year;
         }
 
         public void ShowColor()
@@ -57,11 +61,11 @@ namespace DefineClass
             suarez.Introduce("Uruguay");
 
 
-            Car car01 = new Car("red");
+            Car car01 = new Car("Mustang","red",1969);
+            Car car02 = new Car("Astra","white",2025);
+            System.Console.WriteLine(car01.model);
             car01.ShowColor();
 
-            Car car02 = new Car("green");
-            car02.ShowColor();
         }
     };
 }
